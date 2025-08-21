@@ -1,0 +1,23 @@
+% Titlepage
+\begin{titlepage}
+	\begin{center}
+		\Huge{\textbf{That's it}}\\
+		\LARGE{Kleiner Leitfaden für Erstsemester}
+		\vfil
+		\includegraphics[width=0.6\textwidth]{\imgdir/prof.png}
+		\vfil
+		\LARGE{\semester}
+	\end{center}
+\end{titlepage}
+
+% Rückseite der Titlepage; pagestyle{empty}: keine Kopf- und Fußzeile
+\pagestyle{empty}
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imgdir/Phi.pdf}
+	\end{center}
+\end{figure}
+\pagebreak
+
+% Einbindung des Vorworts; \chapdir verweist auf den im header definierten kapitel-Ordner.
+\include{\chapdir/vorwort}
