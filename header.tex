@@ -5,7 +5,7 @@
 \newcommand{\semester}{Wintersemester 25/26} % WiSe 2016/17 etc.
 % für die Studiengangsbeschreibung:
 \newcommand{\Modul}[1]{\texttt{\small #1}}
-\newcommand{\VL}[1]{\glqq \textsl{#1} \grqq }
+\newcommand{\VL}[1]{\enquote{\textsl{#1}}}
 \newcommand{\fach}[1]{\textbf{#1}}
 % für Tabellen mit Bezeichnungen:
 %\newcommand{\feld}[2]{\textbf{#1}: & #2 \\} % wird nur noch beim Mathetext im Wintersemester gebraucht
@@ -15,6 +15,8 @@
 \newcommand{\chapdir}{kapitel}
 \newcommand{\imgdir}{bilder}
 \newcommand{\NFdir}{\chapdir/nebenfaecher}
+% Für Stundenplantabelle
+\newcommand{\rb}{\raisebox{-1.5ex}[-1.5ex]}
 
 % Packages
 % Zeichensatz
@@ -48,8 +50,11 @@
 \usepackage{eurosym}
 % für Links
 \usepackage[pdfborderstyle={/S/U/W 1}]{hyperref}
-% Funktionalität für Abbildungen
+% Funktionalität für Abbildungen (und cross references)
 \usepackage{caption}
+%\usepackage{cleveref}
+% Kontrolle über Positionen von Abbildungen
+%\usepackage{placeins}
 
 % Layout
 % Absatz-Formatierung (keine Einrückung, keine Abstände)

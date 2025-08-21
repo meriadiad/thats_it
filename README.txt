@@ -1,13 +1,20 @@
 TODO:
-	- remove unnecessary images
-	- create WS25/26 branch from main when finished
+	- Prüfen, ob Bilder entfernt werden können.
 	- fachchinesisch semesterticket 
 	- create WS25/26 tag when finished
 	- Neues Fachschaftsbild in der FS-Vorstellung
+	- Stundenplan updaten
+	- Studienstruktur updaten / fertigstellen
+		- SS: 1. Semester: sollte klar sichtbar sein, welche drei Vorlesungen gemeint sind? bullet point?
+	- Auswahl zwischen WS/SS automatisieren
+	- Lehramt aus den Nebenfächern raus und zu Physik/Biophysik Beschreibung stellen
+	- Schwerpunkt Computational Physics ergänzen
+	- Nebenfach: aktualisieren
 WS 25/26 Änderungen:
 	- thatsit.tex aufgeteilt in:
 		- main.tex
 			- Diese Datei wird kompiliert um die pdf zu erhalten. Sie bindet alle weiteren .tex Dateien ein und enthält ansonsten nur titlepage bis table of contents.
+		- frontmatter.tex
 		- body.tex
 			- Bindet die sections ein.
 		- header.tex
@@ -15,3 +22,6 @@ WS 25/26 Änderungen:
 	- /nebenfaecher und Inhalt der Ordner /neue_texte und /text verschoben in /kapitel/.
 	- Neue commands in header.tex definiert, die anstelle der Ordnernamen in .tex Dateien verwendet werden.
 	- Semester-/Nebenfachbezeichnungen in den .tex Dateinamen entfernt.
+	- Verwendung von package csquotes um Sachen in Anführungsstriche zu setzen.
+	- studienstruktur.tex erstellt
+		- Bindet Texte zu Studienstrukturbeschreibung ein.
