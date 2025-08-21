@@ -1,6 +1,7 @@
 TODO:
 	- remove unnecessary images
 	- create WS25/26 branch from main when finished
+	- fachchinesisch semesterticket 
 WS 25/26 Änderungen:
 	- thatsit.tex aufgeteilt in:
 		- main.tex
