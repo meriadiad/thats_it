@@ -1,6 +1,6 @@
 TODO:
 	- remove unnecessary images
-	- create WS25/26 branch from main when finished
+	- create WS25/26 tag when finished
 WS 25/26 Änderungen:
 	- thatsit.tex aufgeteilt in:
 		- main.tex
