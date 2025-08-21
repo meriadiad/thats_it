@@ -1,0 +1,44 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%		Ab hier werden die Dateien eingeladen
+% Wenn sich der Name der Datei ändert müsst ihr das hier auch ändern
+%% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% Das Professoren-Buchstaben-Bild
+\newpage\thispagestyle{plain}
+\includegraphics[height=1\textheight,width=1\textwidth]{\imgdir/prof-ffm.pdf}
+~%
+\newpage
+%
+% Die eigentlichen Texte
+% ab hier Kopf- und Fußzeile
+%
+\pagestyle{scrheadings}
+\include{\chapdir/fachschaft}
+\include{\chapdir/physikerleben}
+\include{\chapdir/stundenplan}
+\include{\chapdir/allsemestertodo}
+\include{\chapdir/struktur_baphy}
+\include{\chapdir/struktur_maphy}
+\include{\chapdir/phit}
+\include{\chapdir/beweise}
+\include{\chapdir/mentoren}
+\include{\chapdir/exphysik}
+\include{\chapdir/fehler}
+% in dieser Datei werden weitere Dateien für jedes Nebenfach aus dem nebenfach Unterordner eingeladen
+\include{\chapdir/nebenfach}
+\include{\chapdir/notizen1}
+\include{\chapdir/unistruktur}
+\include{\chapdir/pflichten}
+\include{\chapdir/studienfinazierung}
+\include{\chapdir/ausland}
+\include{\chapdir/unisport}
+\include{\chapdir/orientierung}
+\include{\chapdir/bibliothek}
+\include{\chapdir/gleichstellungsrat}
+\include{\chapdir/fachchinesisch}
+\include{\chapdir/programm}
+\include{\chapdir/impressum}
+% hier die Seitenanzahl anpassen, um auf ein Vielfaches von 4 zu kommen
+\include{\chapdir/notizen2}
+\pagestyle{empty}
+\include{\chapdir/end}

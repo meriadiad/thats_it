@@ -1,0 +1,79 @@
+% Dokumentenklasse
+\documentclass[a4paper, 12pt, twoside, openany]{scrbook}
+%
+% Neue commands
+\newcommand{\semester}{Wintersemester 25/26} % WiSe 2016/17 etc.
+% für die Studiengangsbeschreibung:
+\newcommand{\Modul}[1]{\texttt{\small #1}}
+\newcommand{\VL}[1]{\glqq \textsl{#1} \grqq }
+\newcommand{\fach}[1]{\textbf{#1}}
+% für Tabellen mit Bezeichnungen:
+%\newcommand{\feld}[2]{\textbf{#1}: & #2 \\} % wird nur noch beim Mathetext im Wintersemester gebraucht
+% für die Kennzeichnung von Beiträgen
+\newcommand{\von}[1]{\begin{flushright}\small{#1}\end{flushright}}
+% Ordnernamen als commands zwecks einfacher Änderung
+\newcommand{\chapdir}{kapitel}
+\newcommand{\imgdir}{bilder}
+\newcommand{\NFdir}{\chapdir/nebenfaecher}
+
+% Packages
+% Zeichensatz
+\usepackage[utf8]{inputenc}
+% Sonderzeichen
+\usepackage [T1]{fontenc}
+% Schriftart
+\usepackage{lmodern}
+% Deutsch
+\usepackage[german]{babel}
+% Mathezeug
+\usepackage{amsmath}
+% Mathezeug
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% Bilder
+\usepackage{graphicx}
+% Ränder
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=4cm]{geometry}
+% Kopf- u. Fußzeilen
+\usepackage[headsepline]{scrlayer-scrpage}
+% pdf einbinden
+\usepackage{pdfpages}
+% Seiten drehen für Stundenpläne
+\usepackage{rotating}
+% für Tabellen der Studiengänge
+\usepackage{multirow}
+% Eurozeichen mit \euro
+\usepackage{eurosym}
+% für Links
+\usepackage[pdfborderstyle={/S/U/W 1}]{hyperref}
+
+% Layout
+% Absatz-Formatierung (keine Einrückung, keine Abstände)
+% Einrückung nach Absatz
+\setlength{\parindent}{0em}
+% vertikaler Abstand nach Absatz
+\setlength{\parskip}{0em}
+
+% Chapters und Sections
+% die Nummerierungsebene wird um zwei runtergesetzt, nur Subsections bekommen Nummern (ich verwende das hier statt \section*{•} da die * Variante nicht im Inhaltsverzeichnis auftaucht)
+\setcounter{secnumdepth}{-2}
+% die "Tiefe des Inhaltsverzeichnisses", nur Sections werden angezeigt
+\setcounter{tocdepth}{1}
+% definiert den Standard Komascript-Befehl um, damit die Überschriften zentriert sind, statt linksbündig
+\renewcommand*{\raggedsection}{\centering}
+
+% Kopf- und Fußzeileneinstellungen
+% section-Titel in Kopfzeilen: [Text für gerade Seiten] {Text für ungerade Seite}
+\automark[section]{section}
+% Kopfzeilen Stil
+\pagestyle{scrheadings}
+% Löschen des Standardinhaltes
+\clearpairofpagestyles
+% innerer Kopfzeilenslot auf geraden Seiten
+\rehead{Fachschaft Physik}
+% innerer Kopfzeilenslot auf ungeraden Seiten, hier wird das aktuelle Semester (oben mit dem newcommand-befehl festgelegt) reingeschrieben
+\lohead{\semester}
+\lehead{\includegraphics[width=0.03\textwidth]{bilder/prof_g.png} \hspace{0.2cm}\headmark}% Äußerer Kopfzeilenslot mit Sectiontitel und Bild auf geraden Seiten
+\rohead{\headmark \hspace{0.2cm}  \includegraphics[width=0.03\textwidth]{bilder/prof_u.png}}% Äußerer Kopfzeilenslot mit Sectiontitel und Bild auf ungeraden Seiten
+\cfoot{Der Ersti-Leitfaden}% mittlerer Fußzeilenslot
+\ofoot{\pagemark}% äußerer Fußzeilenslot, mit Standardbefehl für Seitenzahlen

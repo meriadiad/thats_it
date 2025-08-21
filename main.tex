@@ -1,0 +1,61 @@
+% Liebe EEV-Organisationsmenschen,
+% dies ist die Rahmendatei für das That's It. Diese Datei müsst ihr kompilieren um ein PDF zu bekommen und hier werden die Packages geladen, die Einstellungen für das Layout gemacht und die einzelnen Texte geladen.
+% In dieser Datei müsst ihr eigentlich nur das Semester  anpassen und falls sich die Namen der eingeladenen Text-Dateien ändern, diese weiter unten anpassen (Die Stelle ist markiert). Sonst muss hier nichts geändert werden.
+%
+% Die Text tex. Dateien müssen im "text" Unterordner sein
+% Die Bilder müssen im "bilder" Unterordner sein
+%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%	Kommentar der Vorlagenerstellerin =)
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Diese Vorlage (Stand 2016) nutzt die Standardklasse und Standardbefehle mit sowenig Packages wie möglich. Ich habe versucht alles soweit wie möglich zu kommentieren. Bei Fragen gerne an daniela@fachschaft.physik.uni-frankfurt.de wenden. %Viel Spaß beim LaTeXen.
+%Daniela
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%   Kommentar Verantwortlicher WS 25/26
+% % % %
+% Ich habe die Vorlage neu strukturiert, in der Hoffnung das Projekt übersichtlicher zu gestalten. Eine Dokumentation der Änderungen findet sich in der README.txt.
+% Durch ein Repo auf Github lässt sich das Projekt (sowohl die "alte" als auch die "neue" Version) sehr leicht teilen: bitte gerne s2208624@stud.uni-frankfurt.de kontaktieren mit Github Profil Info für die alte Version, die neue ist public (meriadiad/thats_it_ws25_26).
+% Marcel
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%
+% Header
+\input{header}
+% Dokumentenklasse
+%\documentclass[a4paper, 12pt, twoside, openany]{scrbook}
+% Style
+%\usepackage{thatsitstyle}
+%
+% Pagestyle (in .sty definiert)
+%\pagestyle{main}
+%
+% Start des eigentlichen Dokuments
+\begin{document}
+% Titlepage
+\begin{titlepage}
+	\begin{center}
+	\Huge{\textbf{That's it}}\\
+	\LARGE{Kleiner Leitfaden für Erstsemester}
+	\vfil
+	\includegraphics[width=0.6\textwidth]{\imgdir/prof.png}
+	\vfil
+	\LARGE{\semester}
+	\end{center}
+\end{titlepage}
+%
+% Rückseite der Titlepage
+\pagestyle{empty}% keine Kopf- und Fußzeile
+\begin{figure}
+	\begin{center}
+	\includegraphics[width=\textwidth]{\imgdir/Phi.pdf}
+	\end{center}
+\end{figure}
+\pagebreak
+%
+\include{\chapdir/vorwort}% text/ bezeichnet den Dateipfad, dann kommt der eigentlich Name der Datei
+%
+\tableofcontents% Inhaltsverzeichnis
+%
+% Body (Kapitel) einbinden
+\input{body}
+%
+\end{document}% Ende des Dokumentes
