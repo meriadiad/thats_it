@@ -3,9 +3,13 @@ TODO:
 <<<<<<< HEAD
 	- create WS25/26 branch from main when finished
 	- fachchinesisch semesterticket 
+<<<<<<< Updated upstream
 =======
 	- create WS25/26 tag when finished
 >>>>>>> 16a7a2949503e65f2baedd41f7c6ff52f80f3a7e
+=======
+	- Neues Fachschaftsbild in der FS-Vorstellung
+>>>>>>> Stashed changes
 WS 25/26 Änderungen:
 	- thatsit.tex aufgeteilt in:
 		- main.tex
