@@ -1,6 +1,7 @@
 TODO:
-	- Prüfen, ob Bilder entfernt werden können.
-	- fachchinesisch semesterticket 
+	- Prüfen, ob Bilder entfernt werden können, zwecks Kürzung der Länge.
+		- Es gibt Sorgen, dass man sich sowas langes gar nicht durchlesen würde (Newsletter...)
+	- fachchinesisch semesterticket/Studienberatung aktualisieren
 	- create WS25/26 tag when finished
 	- Neues Fachschaftsbild in der FS-Vorstellung
 	- Stundenplan updaten
@@ -9,7 +10,13 @@ TODO:
 	- Auswahl zwischen WS/SS automatisieren
 	- Lehramt aus den Nebenfächern raus und zu Physik/Biophysik Beschreibung stellen
 	- Schwerpunkt Computational Physics ergänzen
-	- Nebenfach: aktualisieren
+	- Nebenfach: (Astro) aktualisieren 
+	- Unistruktur/Bafög/Hochschulsport auf Aktualität überprüfen
+	- Abschnitt zu KfW hinsichtlich Eignung überprüfen
+	- Frage zu Bibliotheksabschnitt: im Text ist die Autorin Janika, aber es ist von Margret angegeben, bezieht sich von Margret auf die Öffnungszeiten-Tabelle?
+	- Gleichstellungsrat: wann ist die nächste Wahl?
+	- EEV Programm aktualisieren
+	- Ex1/Theo1/Mathe1 Abschnitte anfragen/einbauen
 WS 25/26 Änderungen:
 	- thatsit.tex aufgeteilt in:
 		- main.tex
